@@ -40,7 +40,8 @@ class oci_status():
         self._incidents = data['incidents']
         self._scheduled_maintenances = data['scheduled_maintenances']
         self._global_status = data['status']['description']
-        self._last_update_date = datetime.datetime.strptime(data['page']['updated_at'],'%Y-%m-%dT%H:%M:%S.%f%z').strftime('%Y-%m-%d %H:%M:%S (%z)')
+        # self._last_update_date = datetime.datetime.strptime(data['page']['updated_at'],'%Y-%m-%dT%H:%M:%S.%f%z').strftime('%Y-%m-%d %H:%M:%S (%z)')
+        self._last_update_date = data['page']['updated_at']
         
         for component in data['components']:
             '''
