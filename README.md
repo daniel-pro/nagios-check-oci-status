@@ -13,7 +13,7 @@ Python modules already installed
 
 ### Installing
 
-* Use any of the above modules that are missing, using pip or yum or apt
+* Install any of the above modules that are missing, using pip or yum or apt
 * Clone this repo under your workspace directory
 
 ```sh
