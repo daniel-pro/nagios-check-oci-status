@@ -34,7 +34,7 @@ if __name__ == "__main__":
             print('CRITICAL - %s of %s is %s' % (srs['service'], srs['region'], srs['status']))
             critical = True
         else:
-            print('OK - %s of %s is %s ' % (srs['service'], srs['region'], srs['status']))
+            print('OK - %s in %s is %s ' % (srs['service'], srs['region'], srs['status']))
     if critical:
         exit(2)
     else:
